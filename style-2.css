@@ -1,0 +1,334 @@
+/* font-family: 'Rowdies', cursive;
+font-family: 'Sofia Sans', sans-serif; */
+ 
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0; 
+}
+
+/* header */ 
+
+.container{
+    width: 100%;
+    padding: 100px 200px;
+    background-color: #FFA07A;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+}
+
+.logo{
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    text-decoration: none;
+    color: white; 
+}
+
+.right-menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+.right-menu ul li{
+    display: inline;
+}
+
+.right-menu a{
+    font-family: 'Rowdies', cursive;
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.6);
+    font-size: 25px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.right-menu a:hover{
+   color:rgba(255, 255, 255, 0.9);
+}
+
+.left-side{
+    flex: 50%;
+    color: white;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 50px;  
+    line-height: 1.5;
+}
+
+.right-side{
+    padding-top: 70px;
+    padding-left: 70px;
+    flex: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.right-side img{
+    width: 65%;
+    transform: rotate(30deg);
+}
+
+.button{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.btn-1{
+    font-family: 'Sofia Sans', sans-serif;
+    /* padding: 10px 30px; */
+    color: white;
+    background-color: black;
+    font-size: 25px;
+    border-radius: 5px;
+    margin: 5px;
+    width: 200px;
+    height: 65px;
+
+}
+
+.btn-2{
+    font-family: 'Sofia Sans', sans-serif;
+    /* padding: 10px 30px; */
+    color: white;
+    background-color: #FFA07A;
+    font-size: 25px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 5px;
+    width: 200px;
+    height: 65px;
+   
+}
+
+.btn-1:hover{
+    opacity: 0.6;
+}
+
+.btn-2:hover{
+    background-color: white;
+    color:black;
+}
+
+i{
+    margin-right: 5px;
+}
+
+/* properties */
+
+.properties{
+    background-color: white;
+    font-family: 'Sofia Sans', sans-serif;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 1;
+    top: -60px;
+}
+
+.col-3{
+    flex: 33.3%;
+    padding: 30px;
+    text-align: center;      
+}
+
+.columns{
+    display: flex;
+    padding: 50px;
+}
+
+.columns i{
+    font-size: 40px;
+    color: #FFA07A;
+}
+
+.columns i:hover{
+   opacity: 0.6;
+}
+
+.columns p{
+    color: darkgrey;
+}
+
+.header{
+    position: relative;  
+    z-index: 0;
+}
+
+/* carousels */
+
+
+.col-4{
+    flex: 25%;
+    padding: 20px;
+}
+
+.col-4 img{
+    width: 100%;
+}
+
+
+/* plans */
+
+
+.cards{
+    background-color: white;
+    font-family: 'Sofia Sans', sans-serif;
+    padding-bottom: 0;
+    text-align: center;
+ 
+    
+}
+.cards p{
+    color: gray;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.cards h1{
+    font-size: 50px;
+}
+
+.card{
+    border:1px solid gray;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.card-title{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    background-color: lightgray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+li{
+    list-style: none;
+}
+
+.card-body span{
+    color: gray;
+    
+}
+.features{
+    background-color:dodgerblue;
+    border: 1px solid dodgerblue;
+    color: white;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 20px;
+}
+
+.purchase{
+    padding: 10px 25px;
+    width: 80%;
+    margin: 15px;
+    border-radius: 10px;
+    border:1px solid blue;
+    font-size: 20px;
+   
+}
+
+.purchase:hover{
+   opacity:0.6;
+   
+}
+
+/* first-footer */
+
+.first-footer h1{
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+/* footer */
+
+.footer{
+    background-color: white;
+    text-align: center;
+}
+
+.icons{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+
+
+@media(max-width:600px)
+
+{
+    .container{
+        padding:10px 20px;
+    }
+    .columns,.menu{
+        flex-direction: column;
+    }
+
+    .col-3{
+        flex: 100%;
+        padding: 0;
+    }
+
+    .col-4{
+       flex: 50%;
+       margin-bottom: 20px;
+       text-align: center;
+
+    }
+    .col-4 img{
+        width: 50%;
+    }
+  
+
+
+    .content{
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .button{
+        flex-direction: column;
+        /* padding: 0 150px; */
+        
+    }
+
+    .right-side img{
+        width: 50%;
+        transform: rotate(0deg);
+    }
+
+    .logo{
+        text-align: center;
+    }
+
+    
+    
+}
